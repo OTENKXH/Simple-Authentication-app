@@ -1,38 +1,109 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+📌 Simple Authentication App (Next.js + MongoDB)
 
-## Getting Started
+A simple full-stack Next.js authentication app with protected Todo list functionality.
 
-First, run the development server:
+This project demonstrates:
 
-```bash
+✔ User signup & login
+✔ JWT authentication with cookies
+✔ Protected server-side rendering (SSR) pages
+✔ Simple CRUD for todos
+✔ MongoDB as the database
+
+📁 Repository
+
+https://github.com/OTENKXH/Simple-Authentication-app
+
+🚀 Features
+
+🔐 Signup & Login
+
+🍪 JWT stored in httpOnly cookies
+
+📋 Protected Todos page
+
+🗂 API routes using Next.js
+
+📦 Mongoose for MongoDB interaction
+
+🛠 Client + Server working together (Full-Stack)
+
+🛠 Tech Stack
+Layer Technology
+Framework Next.js 14
+Frontend React
+Database MongoDB
+ORM Mongoose
+Auth JSON Web Tokens
+Icons FontAwesome / React Icons
+Passwords bcryptjs
+🚀 Getting Started
+
+1. Clone the repository
+   git clone https://github.com/OTENKXH/Simple-Authentication-app.git
+2. Install dependencies
+   cd Simple-Authentication-app
+   npm install
+3. Add environment variables
+
+Create a .env file in the root:
+
+MONGODB_URI=your_mongodb_connection_string
+JWT_PRIVATE_KEY=your_secret_key 4. Run the app
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
+in your browser.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+📌 Project Structure
+├── /models
+│ ├── Todo.js
+│ └── User.js
+├── /pages
+│ ├── /api
+│ │ ├── auth
+│ │ │ ├── signin.js
+│ │ │ └── signup.js
+│ │ └── todos.js
+│ ├── index.js
+│ ├── signin.js
+│ └── todos.js
+├── /utils
+│ ├── auth.js
+│ └── db.js
+├── .gitignore
+├── package.json
+└── README.md
+🔐 How Authentication Works
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+User signs up / signs in
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Server validates and issues a JWT
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+JWT is stored in an HTTP-only cookie
 
-## Learn More
+Protected pages validate this token on the server side
 
-To learn more about Next.js, take a look at the following resources:
+Unauthenticated users are redirected to login
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🧪 Todos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Todos are linked to the logged-in user
 
-## Deploy on Vercel
+Stored in MongoDB with a user reference
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Displayed only after authentication
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+❓ Notes
+
+✔ Environment variables are required.
+✔ This app is for learning & practice.
+✔ Change JWT_SECRET for production use.
+
+📌 License
+
+This project is open-source and free to use.
+
+🙌 Thanks for checking out this project!
+
+Feel free to fork ⭐ and use it as a learning template.
