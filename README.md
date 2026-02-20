@@ -39,26 +39,25 @@ This project demonstrates:
 
 ## 📂 Project Structure
 
-├── models/
-│ ├── User.js
-│ └── Todo.js
-├── pages/
-│ ├── api/
-│ │ ├── auth/
-│ │ │ ├── signin.js
-│ │ │ ├── signup.js
-│ │ │ └── signout.js
-│ │ └── todos.js
-│ ├── signin.js
-│ ├── signup.js
-│ ├── todos.js
-│ └── index.js
-├── utils/
-│ ├── auth.js
-│ └── db.js
-├── .env (not committed)
-├── package.json
-└── README.md
+├── models/<br/>
+│ ├── User.js<br/>
+│ └── Todo.js<br/>
+├── pages/<br/>
+│ ├── api/<br/>
+│ │ ├── auth/<br/>
+│ │ │ ├── signin.js<br/>
+│ │ │ ├── signup.js<br/>
+│ │ │ └── signout.js<br/>
+│ │ └── todos.js<br/>
+│ ├── signin.js<br/>
+│ ├── signup.js<br/>
+│ ├── todos.js<br/>
+│ └── index.js<br/>
+├── utils/<br/>
+│ ├── auth.js<br/>
+│ └── db.js<br/>
+├── package.json<br/>
+└── README.md<br/>
 
 ---
 
@@ -66,7 +65,6 @@ This project demonstrates:
 
 ### 1️⃣ Clone the repository
 
-```
 git clone https://github.com/OTENKXH/Simple-Authentication-app.git
 2️⃣ Install dependencies
 npm install
@@ -115,4 +113,3 @@ Do not expose secret keys in public repositories
 Hossein Keshavarz
 
 ⭐ Feel free to fork this repository and use it for learning!
-```
